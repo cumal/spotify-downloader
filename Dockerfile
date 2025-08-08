@@ -20,9 +20,6 @@ RUN pip install --upgrade pip uv wheel spotipy
 # Copy requirements files
 COPY uv.lock pyproject.toml /
 
-# Install spotdl requirements
-RUN uv sync
-
 # Add source code files to WORKDIR
 ADD . .
 
